@@ -11,5 +11,8 @@ let data = [
 ]
 
 ReactDOM.render(<App />, document.getElementById('root'))
-ReactDOM.render(<CommentBox data={data} />, document.getElementById('app'))
+ReactDOM.render(
+    <CommentBox data={data} url="src/comments.json" />,
+    document.getElementById('app')
+)
 registerServiceWorker()
